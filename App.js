@@ -32,7 +32,6 @@ import LocationServicesDialogBox from "react-native-android-location-services-di
 // OTHER
 import styles from './styles';
 import ClassifyPane from './ClassifyPane.js';
-import Grid from 'react-native-easy-grid';
 import { db, setData, getData } from './database_functions.js';
 
 MapboxGL.requestAndroidLocationPermissions()
