@@ -27,7 +27,7 @@ const ClassifyPane = () => {
   }
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>classify</Text>
+      {/* <Text style={styles.text}>classify</Text> */}
       {camera}
       <Camera style={styles.camera} ref={ref => {setCameraRef(ref);}}/>
       <View style={styles.buttonContainer}>
@@ -41,7 +41,7 @@ const ClassifyPane = () => {
 
               setImg(photo);
               setTimeout(function(){
-              setText(<Text style={{color:"white",fontSize:20, alignSelf:"center"}}>plastic</Text>);
+              setText(<Text style={{color:"#F2CC8F",fontSize:20, alignSelf:"center"}}>plastic</Text>);
               }, 1000,);
               // body = JSON.stringify({"val":btoa(photo.base64)})
 
@@ -65,7 +65,7 @@ const ClassifyPane = () => {
               // });
             }
           }}>
-          <Text style={styles.buttonText}> capture </Text>
+          <Text style={styles.buttonText}> classify </Text>
         </TouchableOpacity>
         </View>        
         <ScrollView>
@@ -100,6 +100,7 @@ const styles = StyleSheet.create({
       height: 41,
       borderWidth: 1,
       borderColor: '#E07A5F',
+      backgroundColor: '#81B29A',
       borderRadius: 10,
       alignItems: 'center',
     },
@@ -110,7 +111,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
       fontSize: 24,
-      color: '#E74C3C',
+      color: '#F4F1DE',
       alignSelf:'center',
     },
 });
