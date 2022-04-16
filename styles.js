@@ -82,6 +82,17 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         color: "#E07A5F",
     },
+    center_text: {
+        position: 'relative',
+        textAlign: "center",
+        justifyContent: "center",
+        fontSize: 25,
+        backgroundColor: '#81B29A',
+        color: '#3D595B',
+        alignSelf:'center',
+        marginTop: 20,
+        marginBottom: 5,
+    },
     home_log: {
         width: 0.9 * width,
         height: 0.4 * height,

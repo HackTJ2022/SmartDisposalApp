@@ -41,7 +41,7 @@ const ClassifyPane = () => {
 
               setImg(photo);
               setTimeout(function(){
-              setText(<Text style={{color:"white",fontSize:20, alignSelf:"center"}}>plastc</Text>);
+              setText(<Text style={{color:"white",fontSize:20, alignSelf:"center"}}>plastic</Text>);
               }, 1000,);
               // body = JSON.stringify({"val":btoa(photo.base64)})
 

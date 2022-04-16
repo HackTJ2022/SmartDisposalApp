@@ -21,7 +21,7 @@ import arrow from './icons/7arrow.png';
 import button from './icons/Ellipse29.png';
 import penguin from './icons/penguin.png';
 import nametag from './icons/nametag.png';
-import loadGif from './gifs/R.gif'
+import loadGif from './gifs/ring-alt.gif'
 import 'react-native-gesture-handler';
 
 // MAP IMPORTS
@@ -71,14 +71,16 @@ const HomeScreen = (props) => {
     con.push(<Image key={i} source={penguin} />);
   }
   const values = [0, 4, 6, 1, 7, 3, 0, 8, 6, 2, 0, 10, 20, 12, 0, 0, 10, 0, 17, 8, 0, 6, 0, 6, 10, 23, 0, 6, 10, 23] // getData()
-  const colors = ['#504f55', '#655488', '#9F7DE1', '#FFFFFF']
+  const colors = ['#F4F1DE', '#E07A5F', '#3D405B', '#81B29A', '#F2CC8F']
   // const blocksStyles
   return (
     <View>
       <View style={styles.home_container}>
         <ScrollView>
+        <Text style={styles.center_text}> Hello awesome recycler! Welcome to SmartDisposalApp! </Text>
           <View style={styles.home_log}>
-            <Text style={styles.home_text}> You have saved {JSON.stringify(totalCnt.length)} penguins </Text>
+            {/* <Text style={styles.home_text}> You have saved {JSON.stringify(totalCnt.length)} penguins </Text> */}
+            <Text style={styles.home_text}> You have saved 3 penguins </Text>
             <View style={{ flex: 1, flexDirection: 'row', flexWrap: 'wrap' }}>
               {con}
             </View>
