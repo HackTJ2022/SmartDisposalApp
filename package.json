@@ -46,6 +46,6 @@
     "@babel/core": "~7.9.0"
   },
   "private": true,
-  "name": "LifeCycle",
+  "name": "SmartDisposalApp",
   "version": "1.0.0"
 }

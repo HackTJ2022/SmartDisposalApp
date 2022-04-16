@@ -19,7 +19,7 @@ import log from './icons/log.png';
 import recycle from './icons/recycle.png';
 import arrow from './icons/7arrow.png';
 import button from './icons/Ellipse29.png';
-import turtle from './icons/turtle.png';
+import penguin from './icons/penguin.png';
 import nametag from './icons/nametag.png';
 import loadGif from './gifs/R.gif'
 import 'react-native-gesture-handler';
@@ -68,7 +68,7 @@ const HomeScreen = (props) => {
   console.log("Turtles: ", t)
   const con = []
   for (let i = 0; i < t; i++) {
-    con.push(<Image key={i} source={turtle} />);
+    con.push(<Image key={i} source={penguin} />);
   }
   const values = [0, 4, 6, 1, 7, 3, 0, 8, 6, 2, 0, 10, 20, 12, 0, 0, 10, 0, 17, 8, 0, 6, 0, 6, 10, 23, 0, 6, 10, 23] // getData()
   const colors = ['#504f55', '#655488', '#9F7DE1', '#FFFFFF']
@@ -78,7 +78,7 @@ const HomeScreen = (props) => {
       <View style={styles.home_container}>
         <ScrollView>
           <View style={styles.home_log}>
-            <Text style={styles.home_text}> You have saved {JSON.stringify(totalCnt)} turtles </Text>
+            <Text style={styles.home_text}> You have saved {JSON.stringify(totalCnt.length)} penguins </Text>
             <View style={{ flex: 1, flexDirection: 'row', flexWrap: 'wrap' }}>
               {con}
             </View>
@@ -144,20 +144,20 @@ const LogScreen = () => {
       <Button title="click for return" onPress={() => { getData(setD) }} />
   <Text>here data: {JSON.stringify(data)}</Text>*/}
       <ScrollView>
-        <View style={styles.home_log}>
-          <Text style={styles.logText}>Date: 10/31/2021</Text>
-          <Text style={styles.logText}>Classifications: Cardboard</Text>
-          <Image style={styles.logImg} source={require("./icons/cardboard.png")}></Image>
+      <View style={styles.home_log}>
+          <Text style={styles.logText}>Date: 04/16/2022</Text>
+          <Text style={styles.logText}>Classifications: Metal</Text>
+          <Image style={styles.logImg} source={require("./icons/metal.png")}></Image>
         </View>
         <View style={styles.home_log}>
-          <Text style={styles.logText}>Date: 10/31/2021</Text>
+          <Text style={styles.logText}>Date: 04/16/2022</Text>
           <Text style={styles.logText}>Classifications: Plastic</Text>
           <Image style={styles.logImg} source={require("./icons/index.jpeg")}></Image>
         </View>
         <View style={styles.home_log}>
-          <Text style={styles.logText}>Date: 10/30/2021</Text>
-          <Text style={styles.logText}>Classifications: Metal</Text>
-          <Image style={styles.logImg} source={require("./icons/metal.png")}></Image>
+          <Text style={styles.logText}>Date: 04/16/2022</Text>
+          <Text style={styles.logText}>Classifications: Cardboard</Text>
+          <Image style={styles.logImg} source={require("./icons/cardboard.png")}></Image>
         </View>
       </ScrollView>
       <NavBar images={[map, log, recycle]} labels={['MAP', 'LOG', 'CLASSIFY']} />
