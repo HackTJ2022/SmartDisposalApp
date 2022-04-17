@@ -1,4 +1,4 @@
-#Inspiration
+##Inspiration
 We, as many in our generation, care deeply about our environment. In recent years, we've heard horror stories about the state of our environment, and in particular, our climate. We've seen trash on our neighborhood sidewalks and even our beloved school's courtyards. However, whenever we came across a piece of recyclable material, we didn’t know the proper way to dispose of it. We wanted to be part of the solution to this grave problem, and so we created SmartDisposal, an app that allows you to classify photos of trash you find and identifies the nearest disposal centers to dispose of your garbage.
 
 #What it does
