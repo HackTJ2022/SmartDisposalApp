@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         backgroundColor: "#F2CC8F",
         flexDirection: "row",
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
     },
     layoutMap: {
         flexDirection:'row',
@@ -27,12 +27,12 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         marginTop: 0.04 * height,
         backgroundColor: '#81B29A',
-        marginLeft: 0.5 * 0.1 * width
+        marginLeft: 0.5 * 0.1 * width,
     },
     imageMap: {
         width: 0.27 * width,
         height: 0.15 * height,
-        marginLeft: -30
+        marginLeft: -30,
     },  
     imageMap2: {
         width: 0.1 * width,
@@ -102,7 +102,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#81B29A',
         borderRadius: 10,
         borderWidth: 1,
-        // borderColor: '#fff',
     },
     home_text: {
         fontSize: 20,
@@ -115,23 +114,23 @@ const styles = StyleSheet.create({
         height: height,
         backgroundColor: '#3D595B',
         alignItems: 'center',
-        color: '#FFFFFF'
+        color: '#FFFFFF',
       },
     heatmap : {
         backgroundColor: "#2E2E33", 
         marginTop: 10, 
         marginLeft: 0.05*width, 
-        marginRight: 0.05*width
+        marginRight: 0.05*width,
     },
     logText: {
         color: "#ffffff",
         fontSize: 20,
-        marginLeft:.02*width
+        marginLeft:.02*width,
     },
     logImg: {
         alignSelf: "center",
         width: 0.35*width,
-        height: 0.23*height
+        height: 0.23*height,
     }
 });
 
