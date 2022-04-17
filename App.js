@@ -69,9 +69,9 @@ const HomeScreen = (props) => {
   for (let i = 0; i < t; i++) {
     con.push(<Image key={i} source={penguin} />);
   }
-  const values = [0, 4, 6, 1, 7, 3, 0, 8, 6, 2, 0, 10, 20, 12, 0, 0, 10, 0, 17, 8, 0, 6, 0, 6, 10, 23, 0, 6, 10, 23] // getData()
+  const values = [0, 4, 6, 1, 7, 3, 0, 8, 6, 2, 0, 10, 20, 12, 0, 0, 10, 0, 17, 8, 0, 6, 0, 6, 10, 23, 0, 6, 10, 23]
   const colors = ['#F4F1DE', '#E07A5F', '#3D405B', '#81B29A', '#F2CC8F']
-  // const blocksStyles
+  
   return (
     <View>
       <View style={styles.home_container}>
@@ -187,7 +187,6 @@ function MapScreenSelection() {
   return (
     <View style={{ backgroundColor: "#3D595B" }}>
       <ScrollView>{mapOptions}</ScrollView>
-
       <NavBar
         images={[map, log, recycle]}
         labels={["MAP", "LOG", "CLASSIFY"]}
@@ -387,7 +386,6 @@ function NavItem(props) {
           height={props.height}
           label={props.label}
         />
-        {/* <Link to=""/> */}
         <Label label={props.label} />
       </View>
     </TouchableOpacity>
