@@ -37,11 +37,11 @@ const ClassifyPane = () => {
             "use strict";
             if(cameraRef){
               let photo = await cameraRef.takePictureAsync({base64: true});
-              setData(new Date().getTime(), 'plastic', JSON.stringify(photo.base64));
+              setData(new Date().getTime(), 'cardboard', JSON.stringify(photo.base64));
 
               setImg(photo);
               setTimeout(function(){
-              setText(<Text style={{color:"#F2CC8F",fontSize:20, alignSelf:"center"}}>plastic</Text>);
+              setText(<Text style={{color:"#F2CC8F",fontSize:20, alignSelf:"center"}}>cardboard</Text>);
               }, 1000,);
               // body = JSON.stringify({"val":btoa(photo.base64)})
 

@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     rectangle: {
         width: width,
         height: 0.12 * height,
-        marginTop: 0.76 * height,
+        marginTop: 0.81 * height,
         position: 'absolute',
         backgroundColor: "#F2CC8F",
         flexDirection: "row",
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         fontSize: 25,
         backgroundColor: '#81B29A',
-        color: '#3D595B',
+        color: '#ffffff',
         alignSelf:'center',
         marginTop: 20,
         marginBottom: 5,
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     logImg: {
         alignSelf: "center",
         width: 0.35*width,
-        height: 0.3*height
+        height: 0.23*height
     }
 });
 

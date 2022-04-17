@@ -147,6 +147,12 @@ const LogScreen = () => {
       <ScrollView>
       <View style={styles.home_log}>
           <Text style={styles.logText}>Date: 04/16/2022</Text>
+          <Text style={styles.logText}>Classifications: Cardboard</Text>
+          <Image style={styles.logImg} source={require("./icons/cardboard.png")}></Image>
+          <Text style={styles.logText}>Cool fact: Cardboard is used to package 80% of the products in the US</Text>
+        </View>
+      <View style={styles.home_log}>
+          <Text style={styles.logText}>Date: 04/16/2022</Text>
           <Text style={styles.logText}>Classifications: Metal</Text>
           <Image style={styles.logImg} source={require("./icons/metal.png")}></Image>
         </View>
@@ -154,11 +160,6 @@ const LogScreen = () => {
           <Text style={styles.logText}>Date: 04/16/2022</Text>
           <Text style={styles.logText}>Classifications: Plastic</Text>
           <Image style={styles.logImg} source={require("./icons/index.jpeg")}></Image>
-        </View>
-        <View style={styles.home_log}>
-          <Text style={styles.logText}>Date: 04/16/2022</Text>
-          <Text style={styles.logText}>Classifications: Cardboard</Text>
-          <Image style={styles.logImg} source={require("./icons/cardboard.png")}></Image>
         </View>
       </ScrollView>
       <NavBar images={[map, log, recycle]} labels={['MAP', 'LOG', 'CLASSIFY']} />
