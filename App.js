@@ -63,7 +63,7 @@ const HomeScreen = (props) => {
     console.log("HOMESCREEN: ", totalCnt);
   }, []);
 
-  const t = parseInt(10 / 3) // totalCnt/3
+  const t = parseInt(10 / 3) 
   console.log("Turtles: ", t)
   const con = []
   for (let i = 0; i < t; i++) {
@@ -141,9 +141,6 @@ const LogScreen = () => {
 
   return (
     <View style={styles.home_container}>
-      {/*<Button title="click for sex" onPress={() => setData(new Date().getTime(), 'TEST LABEL', 'TEST IMAGE')} />
-      <Button title="click for return" onPress={() => { getData(setD) }} />
-  <Text>here data: {JSON.stringify(data)}</Text>*/}
       <ScrollView>
       <View style={styles.home_log}>
           <Text style={styles.logText}>Date: 04/16/2022</Text>
